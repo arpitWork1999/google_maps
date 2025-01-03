@@ -117,7 +117,6 @@ class _MapPageState extends State<MapPage> {
             mode: TravelMode.driving));
     if (result.points.isNotEmpty) {
       result.points.forEach((PointLatLng point) {
-        ß
         polylineCoordinates.add(LatLng(point.latitude, point.longitude));
       });
     } else {
